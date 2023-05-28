@@ -1,0 +1,133 @@
+
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(121, 115, 115);
+    font-size: 40px;
+    text-align: center;
+}
+h3 {
+    font-size: 60px;
+    text-align: center;
+    color-scheme: rgb(23, 34, 46);
+}
+h4 {
+    font-style: oblique;
+}
+h5 {
+    font-size: 30px;   /*h tags are block elements*/
+}
+h5:hover {
+    background-color: azure;
+}
+
+.center-align-list {
+    list-style-position:inside;
+}
+.center {
+    margin-left: auto;  /*this is how you center a block element */
+    margin-right: auto;
+}
+p{
+    border: 5px solid blueviolet;
+}
+#cat-div img{
+    opacity: .75; /*anything less than 1 makes the image slightly transparent*/
+}
+#cat-div img:hover{  /*when you hover over the image, the transparency animates to fully opaque */
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+ol {
+    padding: 20px; /* this is the area around the content */
+    text-align: center;
+}
+
+ol li {
+    padding: 10px 0;
+}
+ol li:hover{
+    background-color: rgb(201, 132, 132);
+}
+
+.pretty-pepe-div {
+    background-color: rgb(171, 230, 148);
+}
+
+table{
+    border-collapse: collapse; /*this takes away the border gaps that would normally show in a table */
+    width: 100%;
+}
+th,td{
+    padding:10px;
+    text-align:center;
+    border-bottom:1px solid black;
+}
+tr:hover{
+    background-color: brown;
+}
+#ichi img, #mylie img, #pepe img{
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,.5);
+}
+.position-relative{ /*I used position:relative so I can use an absolutely positioned element inside it. */
+    position:relative;
+    display:inline-block;
+}
+
+#ichi body{
+    background-color: rgb(128, 128, 194);
+}
+#ichiheader {
+    padding:10px;
+    border-style:solid;
+    border-width: 3px;
+    margin: 10px;
+    background-color: rgb(57, 111, 143);
+}
+html#pepe{
+    border: 5px solid rgb(230, 60, 207);
+    }
+#pepe body{
+    font-size: 30px;
+    background-color: rgb(60, 205, 230);
+}
+#pepe img {
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,.5);
+}
+#pepe tr:hover{ /*I used this rule to override the tr:hover rule above, leaving the background color transparent when hovered over.  */
+    background-color: transparent;
+}
+#pepe-text{  /*This is text on top of the image */
+    position:absolute; /*this positions the text within the position:relative div */
+    left: 53%;
+    top: 35px;
+    color: white;
+    text-shadow: 2px 2px rgb(0,0,0);
+    font-size: 40px;
+}
+ 
+html#mylie{ /*this creates a border for the whole mylie page */
+    border: 5px solid rgb(142, 230, 60);
+}
+#mylie body{
+    background-color: rgb(94, 204, 167);  
+}
+#mylieheader {
+    padding:10px;
+    border-style:solid;
+    border-width: 3px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(123, 57, 143);
+    }
+#mylie img{
+    max-width: 800px;
+    margin: 5rem auto;
+    color: rgb(253, 197, 132);
+    padding: 1rem 2rem;
+    background-color: rgb(253, 197, 132);
+    border-radius: 1rem;
+}
+
